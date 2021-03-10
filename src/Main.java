@@ -1,8 +1,10 @@
 public class Main {
-    public static void main (String[] args){
-        int price = 23530;
+    public static int bonus (int price){
         int bonusCoefficient = 20;
         int bonusMiles = price / bonusCoefficient;
-        System.out.println("Поздравляем! Вам начисленно " + bonusMiles + " бонусных миль");
+        return bonusMiles;
+    }
+    public static void main (String[] args){
+        System.out.println("Поздравляем! Вам начисленно " + bonus(23530) + " бонусных миль");
     }
 }
